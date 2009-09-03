@@ -1,0 +1,70 @@
+@import url("reset.css");
+
+#box {
+	background: url(kirelabs.png) no-repeat center 40px;
+	width: 340px;
+	padding-top: 322px;
+	padding-right: 120px;
+	padding-left: 120px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#impressum {
+	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	font-size: 12px;
+	color: black;
+	text-align: center;
+	width: 481px;
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	border-top-style: dotted;
+	border-top-width: 1px;
+}
+
+#badges {
+	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	font-size: 12px;
+	color: black;
+	text-align: center;
+	width: 481px;
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#badges a {
+	display: block;
+	margin: 3px;
+}
+
+quote:before {
+	content: '„';
+	color: #eee;
+	font-size: 2em;
+	font-weight: bold;
+}
+
+quote:after {
+	content: '“';
+	color: #eee;
+	font-size: 2em;
+	position: relative;
+	right: 0.3em;
+	top: 0.2em;
+	font-weight: bold;
+}
+
+h1 {
+	margin: 2em 0 1em;
+	font-size: 1.5em;
+	font-family: Georgia;
+	text-align: center;
+}
+
+li {
+	font-family: Georgia;
+	list-style-type: circle;
+	margin-left: 1.2em;
+}
