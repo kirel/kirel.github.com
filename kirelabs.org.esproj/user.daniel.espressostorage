@@ -4,8 +4,24 @@
 <dict>
 	<key>ESProjectShowHiddenFilesKey</key>
 	<false/>
+	<key>ESProjectWindowState</key>
+	<dict>
+		<key>ContentSize</key>
+		<string>{1106, 705}</string>
+		<key>ProjectURL</key>
+		<string>file://localhost/Users/daniel/Sites/kirelabs.org/kirelabs.org.esproj/</string>
+		<key>StateType</key>
+		<string>ProjectWindow</string>
+		<key>TopLeftPoint</key>
+		<string>{409, 975}</string>
+	</dict>
 	<key>com.macrabbit.Espresso.FileManager.DisclosureCollapsed</key>
 	<false/>
+	<key>com.macrabbit.Espresso.FileManager.FileControllerState</key>
+	<dict>
+		<key>ExpandedURLs</key>
+		<array/>
+	</dict>
 	<key>com.macrabbit.Espresso.Publisher.DisclosureCollapsed</key>
 	<false/>
 	<key>com.macrabbit.Espresso.Workspace.DisclosureCollapsed</key>
@@ -14,12 +30,6 @@
 	<dict>
 		<key>Tabs</key>
 		<array>
-			<dict>
-				<key>DocumentURL</key>
-				<string>file://localhost/Users/daniel/Sites/kirelabs.org/index.html</string>
-				<key>StateType</key>
-				<string>DefaultTab</string>
-			</dict>
 			<dict>
 				<key>StateType</key>
 				<string>PreviewTab</string>
@@ -36,5 +46,7 @@
 			</dict>
 		</array>
 	</dict>
+	<key>com.macrabbit.Espresso.WorkspaceTabs.DisclosureCollapsed</key>
+	<false/>
 </dict>
 </plist>
