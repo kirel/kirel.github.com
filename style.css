@@ -68,6 +68,12 @@ h1 {
 	text-align: center;
 }
 
+p {
+	margin: 3em 0 1em;
+	font-family: Georgia;
+	text-align: center;
+}
+
 li {
 	font-family: Georgia;
 	list-style-type: circle;
