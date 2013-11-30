@@ -1,12 +1,15 @@
 @import url("reset.css");
 
+body {
+  font-family: Georgia, serif;
+}
+
 #only {
   margin-top: 40px;
 }
 
 #box {
 	width: 340px;
-	padding-top: 22px;
 	padding-right: 120px;
 	padding-left: 120px;
 	margin-left: auto;
@@ -15,7 +18,7 @@
 
 #impressum {
 	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-	font-size: 12px;
+	font-size: .8em;
 	color: black;
 	text-align: center;
 	width: 481px;
@@ -28,7 +31,7 @@
 
 #badges {
 	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-	font-size: 12px;
+	font-size: .8em;
 	color: black;
 	text-align: center;
 	width: 481px;
@@ -48,6 +51,7 @@
 }
 
 quote {
+	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
   text-align: center;
   display: block;
 }
@@ -76,18 +80,28 @@ h1 {
 h2 {
 	margin: 2em 0 1em;
 	font-size: 1.5em;
-	font-family: Georgia;
 	text-align: center;
+}
+
+a:link {
+  color: #00a9eb;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #0d6ca3;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 p {
 	margin: 3em 0 1em;
-	font-family: Georgia;
 	text-align: center;
 }
 
 li {
-	font-family: Georgia;
 	list-style-type: circle;
 	margin-left: 1.2em;
   clear: right;
@@ -96,4 +110,5 @@ li {
 .tech {
   font-size: .8em;
   float: right;
+	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 }
