@@ -1,9 +1,12 @@
 @import url("reset.css");
 
+#only {
+  margin-top: 40px;
+}
+
 #box {
-	background: url(kirelabs.png) no-repeat center 40px;
 	width: 340px;
-	padding-top: 322px;
+	padding-top: 22px;
 	padding-right: 120px;
 	padding-left: 120px;
 	margin-left: auto;
@@ -44,6 +47,11 @@
   vertical-align: middle;
 }
 
+quote {
+  text-align: center;
+  display: block;
+}
+
 quote:before {
 	content: '„';
 	color: #eee;
@@ -62,6 +70,10 @@ quote:after {
 }
 
 h1 {
+  text-align: center;
+}
+
+h2 {
 	margin: 2em 0 1em;
 	font-size: 1.5em;
 	font-family: Georgia;
@@ -78,4 +90,10 @@ li {
 	font-family: Georgia;
 	list-style-type: circle;
 	margin-left: 1.2em;
+  clear: right;
+}
+
+.tech {
+  font-size: .8em;
+  float: right;
 }
