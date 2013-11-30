@@ -44,8 +44,8 @@ body {
   vertical-align: middle;
 }
 
-#bagdes img {
-  vertical-align: middle;
+#badges img {
+  padding: 0 1px;
 }
 
 quote {
