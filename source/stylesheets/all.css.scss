@@ -39,7 +39,7 @@ h1 {
     }
     &.curtain {
       margin: 2em 0;
-      @include transform(perspective(0) rotateX(0) scale(1.1));
+      @include transform(perspective(300px) rotateX(0) scale(1.1));
     }
   }
 }
