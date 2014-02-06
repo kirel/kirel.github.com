@@ -1,0 +1,23 @@
+<!doctype html>
+%html
+  %head
+    %meta{:charset => "utf-8"}/
+    %title kirelabs.org - Projects and experiments in software engineering by Daniel Kirsch
+    %meta{:content => "A collection of software projects and experiments by Daniel Kirsch. Including: Detexify - LaTeX symbol recognition, Functional Javascript", :name => "description"}/
+    %meta{:content => "Daniel Kirsch", :name => "author"}/
+    / Always force latest IE rendering engine or request Chrome Frame
+    %meta{:content => "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible"}/
+    / Use title if it's in the page YAML frontmatter
+    %title= current_page.data.title || "The Middleman"
+    = stylesheet_link_tag "normalize", "all"
+    = javascript_include_tag  "all"
+  %body{:class => page_classes}
+    = yield
+    :javascript
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-8668142-5', 'kirelabs.org');
+      ga('send', 'pageview');

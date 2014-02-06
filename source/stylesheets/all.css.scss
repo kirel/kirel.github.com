@@ -1,0 +1,138 @@
+@import "normalize-css";
+@import "bourbon/app/assets/stylesheets/bourbon";
+@import "neat";
+@import "breakpoint";
+
+body {
+  font-family: Georgia, serif;
+}
+
+body.index {
+  @include outer-container;
+}
+
+#box {
+  width: 380px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 {
+  text-align: center;
+
+  &#logo {
+    margin: .5em 0;
+    font-size: 8em;
+    font-weight: normal;
+    white-space: nowrap;
+    background: image-url("logo.svg") center center no-repeat;
+    background-size: contain;
+    padding: 120px 0 10px 35px;
+    @include transform(perspective(300px) rotateX(-10deg) scale(1));
+
+    #logo-domain {
+      font-size: 0.3em;
+    }
+
+    &.transition {
+      @include transition (all 1.0s ease-out);
+    }
+    &.curtain {
+      margin: 2em 0;
+      @include transform(perspective(0) rotateX(0) scale(1.1));
+    }
+  }
+}
+
+h2 {
+  margin: 2em 0 1em;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+a:link {
+  color: #00a9eb;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #0d6ca3;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+p {
+  margin: 3em 0 1em;
+  text-align: center;
+}
+
+#projects .project {
+  list-style-type: circle;
+  clear: right;
+  margin-bottom: 5px;
+
+  .tech {
+    font-size: .8em;
+    float: right;
+    margin-bottom: 5px;
+    font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+  }
+}
+
+#impressum {
+  font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+  font-size: .8em;
+  color: black;
+  text-align: center;
+  width: 481px;
+  margin: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  border-top-style: dotted;
+  border-top-width: 1px;
+}
+
+#badges {
+  font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+  font-size: .8em;
+  color: black;
+  text-align: center;
+  width: 481px;
+  margin: 20px auto 20px auto;
+  vertical-align: middle;
+
+  a {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  img {
+    padding: 0 1px;
+  }
+
+}
+
+quote {
+  font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+  text-align: center;
+  display: block;
+
+  &:before {
+    content: '„';
+    color: #eee;
+    font-size: 2em;
+    font-weight: bold;
+  }
+
+  &:after {
+    content: '“';
+    color: #eee;
+    font-size: 2em;
+    position: relative;
+    right: 0.3em;
+    top: 0.2em;
+    font-weight: bold;
+  }
+}

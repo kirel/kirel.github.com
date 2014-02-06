@@ -1,0 +1,80 @@
+:javascript
+  document.addEventListener("DOMContentLoaded", function() {
+    var header = document.querySelector('#logo')
+    , viewportWidth  = document.documentElement.clientWidth
+    , viewportHeight = document.documentElement.clientHeight;
+    var logoHeight = header.clientHeight;
+    var margin = (viewportHeight - logoHeight)/2;
+    header.style.margin = margin + 'px 0';
+    window.onscroll = function() {
+      logo.classList.add('transition');
+      logo.classList.remove('curtain');
+      header.style.margin = null;
+      window.onscroll = null;
+    }
+  });
+%h1#logo.curtain><
+  kirelabs
+  %span#logo-domain>< .org
+%quote We do what we must, because we can...
+#box
+  %h2 Projects:
+  %ul#projects
+    %li.project
+      %a{:href => "http://detexify.kirelabs.org"} Detexify - LaTeX symbol recognition
+      %br/
+      %span.tech — Haskell, Sinatra, Raphaël, Machine Learning
+    %li.project
+      %a{:href => "http://kirelabs.org/fun-js"} Fun(ctional) Javascript
+      %br/
+      %span.tech — CoffeeScript, Reveal.js, Point-Free
+    %li.project
+      %a{:href => "http://stabhochsprung.kirelabs.org"} Polevault Competition App
+      %br/
+      %span.tech — Angular.js, Firebase
+    %li.project
+      %a{:href => "http://kunstrasen.fussball-everswinkel.de"} Soccer court crowd funding
+      %br/
+      %span.tech — Ruby on Rails, Angular.js, Responsive
+    %li.project
+      %a{:href => "http://kirelabs.org/mehrkampfrechner"} Leichtathletik Mehrkampfrechner
+    %li.project
+      %a{:href => "http://kirelabs.org/zeitrechner"} Leichtathletik Zeitrechner
+    %li.project
+      %a{:href => "http://leistungsphase.com"} Leistungsphase Architekturbüro Website
+      %br/
+      %span.tech — Design & Code, Ruby on Rails
+  %p
+    Software Engineer at
+    %a{:href => "http://zweitag.de"} Zweitag GmbH
+    = succeed "Wanna" do
+      %br/
+    hire me? Hire
+    = succeed "!" do
+      %a{:href => "http://zweitag.de"} them
+#impressum
+  %span{:itemscope => "", :itemtype => "http://schema.org/Person"}
+    %span{:itemprop => "name"}> Daniel Kirsch
+    ,
+    %span{:itemprop => "address", :itemscope => "", :itemtype => "http://schema.org/PostalAddress"}
+      %span{:itemprop => "streetAddress"}> Wolbecker Straße 45
+      ,
+      %span{:itemprop => "postalCode"} 48155
+      = succeed "," do
+        %span{:itemprop => "addressLocality"} Münster
+    %a{:href => "mailto:mail@danielkirs.ch", :itemprop => "email"} mail@danielkirs.ch
+    %br/
+#badges
+  Find me on
+  %a{:href => "http://twitter.com/kirel"}
+    = image_tag "twitter-bw.png", alt: "Twitter"
+  ,
+  %a{:href => "http://facebook.com/danielkirsch"}
+    = image_tag "facebook-bw.png", alt: "Twitter"
+  and
+  %a{:href => "https://plus.google.com/+DanielKirsch?rel=author"}
+    = image_tag "gplus2-bw.png", alt: "Twitter"
+  — fork me on
+  %a{:href => "https://github.com/kirel"}>
+    = image_tag "github.png", alt: "Twitter"
+  \.
