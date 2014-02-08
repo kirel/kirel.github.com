@@ -12,6 +12,11 @@
       header.style.margin = null;
       window.onscroll = null;
     }
+    setTimeout(function(){
+      if(window.onscroll) {
+        window.onscroll();
+      }
+    }, 3000);
   });
 %h1#logo.curtain><
   kirelabs
