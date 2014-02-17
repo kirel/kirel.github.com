@@ -47,6 +47,13 @@
 
 activate :livereload
 
+activate :deploy do |deploy|
+  deploy.method = :git
+  deploy.build_before = true # default: false
+  deploy.branch = "master"
+  # deploy.strategy = :submodule
+end
+
 set :css_dir, 'stylesheets'
 
 set :js_dir, 'javascripts'
@@ -73,11 +80,4 @@ configure :build do
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
-end
-
-activate :deploy do |deploy|
-  deploy.method = :git
-  deploy.build_before = true # default: false
-  deploy.branch = "master"
-  deploy.stategy = :submodule
 end
