@@ -26,46 +26,55 @@
   %h2 Projects:
   %ul#projects
     %li.project
-      %a{:href => "http://detexify.kirelabs.org"} Detexify - LaTeX symbol recognition
-      %br/
+      %h3
+        %a(href='http://codeformuenster.org/wahlprogramm-matrix') Wahlprogramm-Matrix
+      %p
+        for
+        %a(href='http://codefor.de/muenster') Code for Germany
+      %span.tech — R, Natural Language Processing, Middleman
+    %li.project
+      %h3
+        %a{:href => "http://detexify.kirelabs.org"} Detexify - LaTeX symbol recognition
       %span.tech — Haskell, Sinatra, Raphaël, Machine Learning
     %li.project
-      %a{:href => "http://kirelabs.org/fun-js"} Fun(ctional) Javascript
-      %br/
+      %h3
+        %a{:href => "http://kirelabs.org/fun-js"} Fun(ctional) Javascript
       %span.tech — CoffeeScript, Reveal.js, Point-Free
     %li.project
-      %a{:href => "http://stabhochsprung.kirelabs.org"} Polevault Competition App
-      %br/
+      %h3
+        %a{:href => "http://stabhochsprung.kirelabs.org"} Polevault Competition App
       %span.tech — Angular.js, Firebase
     %li.project
-      %a{:href => "http://kunstrasen.fussball-everswinkel.de"} Soccer court crowd funding
-      %br/
+      %h3
+        %a{:href => "http://kunstrasen.fussball-everswinkel.de"} Soccer court crowd funding
       %span.tech — Ruby on Rails, Angular.js, Responsive
     %li.project
-      %a{:href => "http://kirelabs.org/mehrkampfrechner"} Leichtathletik Mehrkampfrechner
+      %h3
+        %a{:href => "http://kirelabs.org/mehrkampfrechner"} Leichtathletik Mehrkampfrechner
     %li.project
-      %a{:href => "http://kirelabs.org/zeitrechner"} Leichtathletik Zeitrechner
+      %h3
+        %a{:href => "http://kirelabs.org/zeitrechner"} Leichtathletik Zeitrechner
     %li.project
-      %a{:href => "http://www.leistungsphase.com"} Leistungsphase Architekturbüro Website
-      %br/
+      %h3
+        %a{:href => "http://www.leistungsphase.com"} Leistungsphase Architekturbüro Website
       %span.tech — Design & Code, Ruby on Rails
-  %p
-    Software Engineer at
-    %a{:href => "http://zweitag.de"} Zweitag GmbH
+  %p#me
+    I am a mathematician
     %br
-    See
-    = link_to 'danielkirs.ch', 'http://danielkirs.ch'
-    to learn more
+    and full stack software engineer.
+    %br
+    Learn more at
+    = link_to 'http://danielkirs.ch', 'http://danielkirs.ch'
 #impressum
   %span{:itemscope => "", :itemtype => "http://schema.org/Person"}
     %span{:itemprop => "name"}> Daniel Kirsch
     ,
     %span{:itemprop => "address", :itemscope => "", :itemtype => "http://schema.org/PostalAddress"}
-      %span{:itemprop => "streetAddress"}> Wolbecker Straße 45
+      %span{:itemprop => "streetAddress"}> Oppelner Straße 33
       ,
-      %span{:itemprop => "postalCode"} 48155
+      %span{:itemprop => "postalCode"} 10997
       = succeed "," do
-        %span{:itemprop => "addressLocality"} Münster
+        %span{:itemprop => "addressLocality"} Berlin
     %a{:href => "mailto:mail@danielkirs.ch", :itemprop => "email"} mail@danielkirs.ch
     %br/
 #badges

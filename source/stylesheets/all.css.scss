@@ -63,7 +63,7 @@ a:hover {
   text-decoration: underline;
 }
 
-p {
+#me {
   margin: 3em 0 1em;
   text-align: center;
 }
@@ -71,7 +71,19 @@ p {
 #projects .project {
   list-style-type: circle;
   clear: right;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
+
+  h3 {
+    font-size: 1em;
+    font-weight: normal;
+    text-align: left;
+    margin: 0;
+  }
+
+  p {
+    margin: 0;
+    font-size: .8em;
+  }
 
   .tech {
     font-size: .8em;
