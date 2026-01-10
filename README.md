@@ -16,6 +16,22 @@ This repository contains the static files for [kirelabs.org](https://kirelabs.or
 
 The site is a static website. It serves as a landing page for various sub-projects and professional information.
 
+## Preview
+
+To preview the site locally, you can use any static file server. For example:
+
+### Using Python
+```bash
+python3 -m http.server
+```
+
+### Using Node.js
+```bash
+npx serve .
+```
+
+Then open [http://localhost:8000](http://localhost:8000) (for Python) or [http://localhost:3000](http://localhost:3000) (for `npx serve`) in your browser.
+
 ## License
 
 All rights reserved by Daniel Kirsch unless otherwise specified in sub-projects.
